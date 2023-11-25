@@ -1,0 +1,21 @@
+<h1>Usuários</h1>
+
+<table>
+    <tr>
+      <th>uid</th>
+      <th>Nome</th>
+      <th>Idade</th>
+      <th>Localização</th>
+    </tr>
+
+        <% listaPessoas.forEach(pessoa => { %>
+        <tr>
+            <th><%= pessoa.id %></th>
+            <th><%= pessoa.nome %></th>
+            <th><%= pessoa.idade %></th>
+            <th><%= pessoa.localizacao %></th>
+        </tr>
+        <% }) %>
+    
+
+</table>
